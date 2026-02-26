@@ -8,5 +8,20 @@ int main() {
     double GBP_Bendras = 0.8729, GBP_Pirkti = 0.8600, GBP_Parduoti = 0.9220;
     double USD_Bendras = 1.1793, USD_Pirkti = 1.1460, USD_Parduoti = 1.2340;
     double INR_Bendras = 104.6918, INR_Pirkti = 101.3862, INR_Parduoti = 107.8546;
+
+    int pasirinkimas = 1;
+
+    while (pasirinkimas != 0) {
+
+        cout << "\n1 - Palyginti kursa\n";
+        cout << "2 - Pirkti valiuta\n";
+        cout << "3 - Parduoti valiuta\n";
+        cout << "0 - Iseiti\n";
+        cout << "Pasirinkite: ";
+        cin >> pasirinkimas;
+    }
+
+    cout << "Programa baigta.";
+
     return 0;
 }
