@@ -42,6 +42,17 @@ int main() {
     if (valiuta == 2) cout << "Gausite: " << kiekis * USD_Pirkti << " USD\n";
     if (valiuta == 3) cout << "Gausite: " << kiekis * INR_Pirkti << " INR\n";
         }
+    if (pasirinkimas == 3) {
+    int valiuta;
+    double kiekis;
+    cout << "1-GBP 2-USD 3-INR: ";
+    cin >> valiuta;
+    cout << "Iveskite valiutos kieki: ";
+    cin >> kiekis;
+    if (valiuta == 1) cout << "Gausite: " << kiekis * GBP_Parduoti << " EUR\n";
+    if (valiuta == 2) cout << "Gausite: " << kiekis * USD_Parduoti << " EUR\n";
+    if (valiuta == 3) cout << "Gausite: " << kiekis * INR_Parduoti << " EUR\n";
+        }
 }
     cout << "Programa baigta."<<endl;
 
