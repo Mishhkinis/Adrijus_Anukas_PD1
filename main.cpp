@@ -12,16 +12,28 @@ int main() {
     int pasirinkimas = 1;
 
     while (pasirinkimas != 0) {
+    cout << "\n1 - Palyginti kursa\n";
+    cout << "2 - Pirkti valiuta\n";
+    cout << "3 - Parduoti valiuta\n";
+    cout << "0 - Iseiti\n";
+    cout << "Pasirinkite: ";
+    cin >> pasirinkimas;
 
-        cout << "\n1 - Palyginti kursa\n";
-        cout << "2 - Pirkti valiuta\n";
-        cout << "3 - Parduoti valiuta\n";
-        cout << "0 - Iseiti\n";
-        cout << "Pasirinkite: ";
-        cin >> pasirinkimas;
+    cout << fixed << setprecision(2);
+
+    if (pasirinkimas == 1) {
+
+    int valiuta;
+    cout << "1-GBP 2-USD 3-INR: ";
+    cin >> valiuta;
+
+    if (valiuta == 1) cout << "1 EUR = " << GBP_Bendras << " GBP\n";
+    if (valiuta == 2) cout << "1 EUR = " << USD_Bendras << " USD\n";
+    if (valiuta == 3) cout << "1 EUR = " << INR_Bendras << " INR\n";
+        }
     }
 
-    cout << "Programa baigta.";
+    cout << "Programa baigta."<<endl;
 
     return 0;
 }
