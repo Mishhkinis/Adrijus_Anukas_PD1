@@ -49,9 +49,9 @@ int main() {
     cin >> valiuta;
     cout << "Iveskite valiutos kieki: ";
     cin >> kiekis;
-    if (valiuta == 1) cout << "Gausite: " << kiekis * GBP_Parduoti << " EUR\n";
-    if (valiuta == 2) cout << "Gausite: " << kiekis * USD_Parduoti << " EUR\n";
-    if (valiuta == 3) cout << "Gausite: " << kiekis * INR_Parduoti << " EUR\n";
+    if (valiuta == 1) cout << "Gausite: " << kiekis / GBP_Parduoti << " EUR\n";
+    if (valiuta == 2) cout << "Gausite: " << kiekis / USD_Parduoti << " EUR\n";
+    if (valiuta == 3) cout << "Gausite: " << kiekis / INR_Parduoti << " EUR\n";
         }
 }
     cout << "Programa baigta."<<endl;
